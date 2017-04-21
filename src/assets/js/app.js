@@ -2,7 +2,7 @@ $(document).foundation();
 
 $(document).ready(function() {
 
-  // Add event listener to inputs.
+  // Add event listener to the inputs.
   $('.product-amount input[type="number"]').change(function(evt) {
 
     var data = $(this).data();
@@ -28,6 +28,12 @@ $(document).ready(function() {
     getTotal();
   });
 
+  // Add event listener to the 'submit' button.
+  $('button[type="submit"]').click(function() {
+    console.log('Button clicked');
+    purchaseItems();
+  });
+
   //Calculate grand total.
   function getTotal() {
     var grandTotal = new Number;
@@ -35,6 +41,18 @@ $(document).ready(function() {
       grandTotal += parseInt($(this).data('total'));
       $('.total').text('$' + grandTotal);
     });
+
+    // Turn off the submit button if the grand total is 0.
+    if (grandTotal === 0) {
+      $('button[type="submit"]').prop('disabled', true);
+    } else {
+      $('button[type="submit"]').prop('disabled', false);
+    }
+  }
+
+  // Collect the 'form' responses and create an object to send to a server.
+  function purchaseItems() {
+    console.log('Items purchased!');
   }
 
   // Calculate initial totals.
