@@ -2,10 +2,14 @@ $(document).foundation();
 
 $(document).ready(function() {
 
-  // Add event listener to the inputs.
+  // Add event listener to the number inputs.
   $('.product-amount input[type="number"]').change(function(evt) {
+    getItemTotal(evt);
+  });
 
-    var data = $(this).data();
+  function getItemTotal(evt) {
+    var el = evt.currentTarget;
+    var data = $(el).data();
     var qty = parseInt(evt.currentTarget.value);
     var currentPrice;
     var total = new Number;
@@ -21,12 +25,12 @@ $(document).ready(function() {
     }
 
     // Update the text in the item total column.
-    $(this).parents('.product-amount')
+    $(el).parents('.product-amount')
       .next('.product-total')
       .data( { 'total': parseInt(total) } )
       .html('$' + total);
     getTotal();
-  });
+  }
 
   // Add event listener to the 'submit' button.
   $('button[type="submit"]').click(function() {
