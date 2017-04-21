@@ -9,70 +9,72 @@
     <div class="callout">
       <h2>Add your items</h2>
       <div class="row">
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Special quantity</th>
-            <th>Special price</th>
-            <th>Quantity</th>
-            <th>Item total</th>
-          </tr>
-          <tr>
-            <td class="product-name product-a">A</td>
-            <td class="product-price product-a text-right">$20</td>
-            <td class="product-special-qty product-a">3</td>
-            <td class="product-special-price product-a text-right">$50</td>
-            <td class="product-amount product-a"><label for="amount_a">Select amount</label>
-              <input class="text-right" data-product="A" data-price="20" data-special-qty="3" data-special-price="50" name="product-a" id="qty_a" type="number" min="0" step="1" value="0" placeholder="Select amount" />
-            </td>
-            <td data-total="0" class="product-total product-a text-right">$0</td>
-          </tr>
-          <tr>
-            <td class="product-name product-b">A</td>
-            <td class="product-price product-b text-right">$30</td>
-            <td class="product-special-qty product-b">4</td>
-            <td class="product-special-price product-b text-right">$80</td>
-            <td class="product-amount product-b"><label for="amount_b">Select amount</label>
-              <input class="text-right" data-product="B" data-price="30" data-special-qty="4" data-special-price="80" name="product-b" id="qty_a" type="number" min="0" step="1" value="0" placeholder="Select amount" />
-            </td>
-            <td data-total="0" class="product-total product-b text-right">$0</td>
-          </tr>
-          <tr>
-            <td class="product-name product-c">A</td>
-            <td class="product-price product-c text-right">$40</td>
-            <td class="product-special-qty product-c"></td>
-            <td class="product-special-price product-c text-right"></td>
-            <td class="product-amount product-c"><label for="amount_c">Select amount</label>
-              <input class="text-right" data-product="C" data-price="40" data-special-qty data-special-price name="product-c" id="qty_c" type="number" min="0" step="1" value="0" placeholder="Select amount" />
-            </td>
-            <td data-total="0" class="product-total product-c text-right">$0</td>
-          </tr>
-          <tr>
-            <td class="product-name product-d">A</td>
-            <td class="product-price product-d text-right">$50</td>
-            <td class="product-special-qty product-d">2</td>
-            <td class="product-special-price product-d text-right">$90</td>
-            <td class="product-amount product-d"><label for="amount_d">Select amount</label>
-              <input class="text-right" data-product="D" data-price="50" data-special-qty="2" data-special-price="90" name="product-d" id="qty_d" type="number" min="0" step="1" value="0" placeholder="Select amount" />
-            </td>
-            <td data-total="0" class="product-total product-d text-right">$0</td>
-          </tr>
-          <tr>
-            <td class="product-name product-e">A</td>
-            <td class="product-price product-e text-right">$60</td>
-            <td class="product-special-qty product-e"></td>
-            <td class="product-special-price product-e text-right"></td>
-            <td class="product-amount product-e"><label for="amount_e">Select amount</label>
-              <input class="text-right" data-product="A" data-price="60" data-special-qty data-special-price name="product-e" id="qty_e" type="number" min="0" step="1" value="0" placeholder="Select amount" />
-            </td>
-            <td data-total="0" class="product-total product-e text-right">$0</td>
-          </tr>
-          <tr>
-            <th>Total</th>
-            <td class="total text-right" colspan="5">$0</td>
-          </tr>
-        </table>
+        <div class="table-scroll">
+          <table class="hover" style="width: 100%;">
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Special quantity</th>
+              <th>Special price</th>
+              <th>Quantity</th>
+              <th>Item total</th>
+            </tr>
+            <tr>
+              <td class="product-name product-a">A</td>
+              <td class="product-price product-a text-right">$20</td>
+              <td class="product-special-qty product-a">3</td>
+              <td class="product-special-price product-a text-right">$50</td>
+              <td class="product-amount product-a"><label for="amount_a">Select amount</label>
+                <input class="text-right" data-product="A" data-price="20" data-special-qty="3" data-special-price="50" name="product-a" id="qty_a" type="number" min="0" step="1" value="0" placeholder="Select amount" />
+              </td>
+              <td data-total="0" class="product-total product-a text-right">$0</td>
+            </tr>
+            <tr>
+              <td class="product-name product-b">A</td>
+              <td class="product-price product-b text-right">$30</td>
+              <td class="product-special-qty product-b">4</td>
+              <td class="product-special-price product-b text-right">$80</td>
+              <td class="product-amount product-b"><label for="amount_b">Select amount</label>
+                <input class="text-right" data-product="B" data-price="30" data-special-qty="4" data-special-price="80" name="product-b" id="qty_a" type="number" min="0" step="1" value="0" placeholder="Select amount" />
+              </td>
+              <td data-total="0" class="product-total product-b text-right">$0</td>
+            </tr>
+            <tr>
+              <td class="product-name product-c">A</td>
+              <td class="product-price product-c text-right">$40</td>
+              <td class="product-special-qty product-c"></td>
+              <td class="product-special-price product-c text-right"></td>
+              <td class="product-amount product-c"><label for="amount_c">Select amount</label>
+                <input class="text-right" data-product="C" data-price="40" data-special-qty data-special-price name="product-c" id="qty_c" type="number" min="0" step="1" value="0" placeholder="Select amount" />
+              </td>
+              <td data-total="0" class="product-total product-c text-right">$0</td>
+            </tr>
+            <tr>
+              <td class="product-name product-d">A</td>
+              <td class="product-price product-d text-right">$50</td>
+              <td class="product-special-qty product-d">2</td>
+              <td class="product-special-price product-d text-right">$90</td>
+              <td class="product-amount product-d"><label for="amount_d">Select amount</label>
+                <input class="text-right" data-product="D" data-price="50" data-special-qty="2" data-special-price="90" name="product-d" id="qty_d" type="number" min="0" step="1" value="0" placeholder="Select amount" />
+              </td>
+              <td data-total="0" class="product-total product-d text-right">$0</td>
+            </tr>
+            <tr>
+              <td class="product-name product-e">A</td>
+              <td class="product-price product-e text-right">$60</td>
+              <td class="product-special-qty product-e"></td>
+              <td class="product-special-price product-e text-right"></td>
+              <td class="product-amount product-e"><label for="amount_e">Select amount</label>
+                <input class="text-right" data-product="A" data-price="60" data-special-qty data-special-price name="product-e" id="qty_e" type="number" min="0" step="1" value="0" placeholder="Select amount" />
+              </td>
+              <td data-total="0" class="product-total product-e text-right">$0</td>
+            </tr>
+            <tr>
+              <th>Total</th>
+              <td class="total text-right" colspan="5">$0</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
